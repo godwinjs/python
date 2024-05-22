@@ -81,3 +81,6 @@ print(
 )
 #100
 #14
+total_candies = 1
+
+print("Splitting", total_candies, "candy" if total_candies == 1 else "candies")
