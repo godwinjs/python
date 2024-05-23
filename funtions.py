@@ -151,3 +151,16 @@ print(x.imag)
 # Here's how to make a complex number, in case you've ever been curious:
 c = 12 + 3j
 print(c.imag)
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+
+planets[:3] = ["mer", "ven", "er"]
+planets[3:-1]
+planets[:-1]
+planets[-3:] # [:] is the same as list.lenght or len(planets)
+
+# The planets sorted in alphabetical order
+sorted(planets) ###
+
+primes = [2, 3, 5, 7]
+sum(primes)###
