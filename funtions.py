@@ -152,6 +152,8 @@ print(x.imag)
 c = 12 + 3j
 print(c.imag)
 
+###LISTS!!!###
+
 planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 
 planets[:3] = ["mer", "ven", "er"]
@@ -164,3 +166,73 @@ sorted(planets) ###
 
 primes = [2, 3, 5, 7]
 sum(primes)###
+
+# Pluto is a planet darn it!
+planets.append('Pluto') #push for JS
+
+planets.pop() # same with JS
+planets.pop()
+
+planets.index('Earth') #2
+
+# Is Earth a planet?
+if "pluto" in planets:
+    planets.index('Pluto')
+#help(planets) to get all the methods and attr on that data type
+
+##Tuples¶
+##Tuples are almost exactly the same as lists. They differ in just two ways.
+#1: The syntax for creating them uses parentheses instead of square brackets
+# 2: They cannot be modified (they are immutable).
+
+x = 0.125
+x.as_integer_ratio() #returns tuple as numerator and denominator (1, 8)
+
+numerator, denominator = x.as_integer_ratio()
+print(numerator / denominator) #0.125
+
+###LOOPS###
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+for planet in planets:
+    print(planet, end=',') # print all on same line
+
+multiplicands = (2, 2, 2, 3, 3, 5)
+product = 1
+for mult in multiplicands:
+    product = product * mult
+print(product)
+
+s = 'steganograpHy is the practicE of conceaLing a file, message, image, or video within another fiLe, message, image, Or video.'
+
+# print all the uppercase letters in s, one at a time
+for char in s:
+    if char.isupper():###
+        print(char, end='')   
+
+for i in range(5):
+    print("Doing important work. i =", i)
+    #Doing important work. i = 0
+# Doing important work. i = 1
+# Doing important work. i = 2
+# Doing important work. i = 3
+# Doing important work. i = 4
+
+i = 0
+while i < 10:
+    print(i, end=' ')
+    i += 1 # increase the value of i by 1
+# 0 1 2 3 4 5 6 7 8 9 
+
+##LIST COMPREHENTION
+squares = [n**2 for n in range(10)]
+squares
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+squares = []
+for n in range(10):
+    squares.append(n**2)
+squares
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+short_planets = [planet for planet in planets if len(planet) < 6]
+short_planets
+# ['Venus', 'Earth', 'Mars']
