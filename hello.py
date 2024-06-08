@@ -175,3 +175,19 @@ def multi_word_search_long(doc_list, keyword):
 multi_word_search_long(['They Learn Python Challenge Casino and car', 'They bought a car, and a horse', 'Casinoville?'], ["car", "casino"])
 #END_RECORD
 
+#RECORD
+import math
+
+print("Math is a {}".format(type(math)), round(math.pi, 3) )
+print(dir(math))
+print("Math.pi to 4 significant figures {:.4}".format(math.pi))
+print(math.log(32, 2))
+
+# Using the array module
+import array as arr
+
+# Creating an array of integers
+my_array = arr.array('i', [1, 2, 3, 4, 5])
+print(type(arr))
+#END_RECORD
+
